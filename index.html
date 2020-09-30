@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css" class="href">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" belajar dom event">
+    <title>domevent</title>
+
+</head>
+
+<body>
+
+    <div class="modalMenu" id="modalMenu">
+
+        <span class="material-icons closeicon" onclick="closeModal()">close</span>
+
+
+        <a href="#home" onclick="closeModal()">home</a>
+        <a href="#about" onclick="closeModal()">about</a>
+        <a href="#contact" onclick="closeModal()">contact</a>
+        <a href="#showcase" onclick="closeModal()">showcase</a>
+    </div>
+
+
+    <nav class="navbar">
+        <h3 class="brand">RAFI</h3>
+        <span class="material-icons menuIcon" onclick="showModal()">menu</span>
+    </nav>
+
+    <main class="container">
+        <section class="home" id="home">
+
+            <img src="./foto_saya_sendiri.jpeg" alt="beli internet bang" class="homeImage">
+
+            <h1 class="homeText">WEB PROFILE RAFI</h1>
+
+
+        </section>
+
+        <section class="about" id="about">
+            <span class="alertAbout">selamat datang di web sederhana kami</span>
+            <h1 class="title">about</h1>
+        </section>
+        <section class="showcase" id="showcase">
+            <span class="material-icons rotateIcon">eco</span>
+
+        </section>
+        <section class="contact" id="contact">
+            <h1 class="title">contact</h1>
+        </section>
+
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
