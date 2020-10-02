@@ -16,7 +16,8 @@ body {
     overflow-x: hidden;
     min-height: 100vh;
     background-color: rgb(255, 253, 255);
-    font-family: 'Lobster', cursive;
+    font-family: 'Bebas Neue', cursive;
+    background-color: darkgoldenrod;
     
 }
 
@@ -93,7 +94,8 @@ body {
 
 .container section{
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,6 +117,7 @@ body {
     align-items: flex-start;
     gap: 40px;
     height: 80%;
+    margin-bottom: auto;
 }
 
 .homeImage {
@@ -122,7 +125,7 @@ body {
     height: 350px;
     object-fit: cover;
     object-position: top;
-    border-radius: 200px 100px 200px 100px;
+    border-radius: 200px 200px 100px 200px;
     border: 14px solid yellow;
     animation-name: bottomToTop;
 
@@ -165,15 +168,17 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    border-radius: 0 200px 0 0;
+    border-radius: 0 200px 0 0;  
 }
 
 .about_box2{
     grid-template: box2;
+    background-color: darkgoldenrod;
 }
 
 .about_box3{
     grid-template: box3;
+    background-color: darkgoldenrod;
 }
 
 .about_box4 {
@@ -189,10 +194,30 @@ body {
 
 
 .showcase {
-    background-image: url(https://images.pexels.com/photos/833052/pexels-photo-833052.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
-    background-size: cover;
-    background-attachment: fixed;
-    color: tomato;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+   
+}
+
+.wrapper_showcase {
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.showcase_title {
+    font-size: 3rem;
+}
+
+.wrapper_showcase img{
+    transition-duration: 1s;
+}
+
+.wrapper_showcase img:hover {
+    border-radius: 200px;
+
 }
 
 .rotateIcon{
